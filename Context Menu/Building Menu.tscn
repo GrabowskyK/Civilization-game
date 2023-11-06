@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtn20vb128whl"]
+
+[ext_resource type="Script" path="res://Context Menu/Building_Menu_Script.gd" id="1_5ege0"]
+
+[sub_resource type="GDScript" id="GDScript_pjbd4"]
+script/source = "extends PopupMenu
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+#
+
+
+"
+
+[node name="Building Menu" type="Node2D"]
+script = ExtResource("1_5ege0")
+
+[node name="PopupMenu" type="PopupMenu" parent="."]
+script = SubResource("GDScript_pjbd4")

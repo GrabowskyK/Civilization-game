@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://de3d4x1dbdimw"]
+
+[ext_resource type="Script" path="res://Game.cs" id="1_iepqb"]
+[ext_resource type="PackedScene" uid="uid://duct5l2b25byk" path="res://map/map.tscn" id="1_u1mho"]
+[ext_resource type="PackedScene" uid="uid://dm5fqlm3gubja" path="res://army/Solider.tscn" id="3_kxk1p"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_iepqb")
+
+[node name="map" parent="." instance=ExtResource("1_u1mho")]
+
+[node name="Solider" parent="." instance=ExtResource("3_kxk1p")]
+position = Vector2(2, 0)
